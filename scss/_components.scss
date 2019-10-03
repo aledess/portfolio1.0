@@ -1,0 +1,57 @@
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: $secondary-color;
+    width: 50%;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: .7rem;
+    text-align: center;
+    border: 1px solid $secondary-color;
+    position: relative;
+    left: 25%;
+    &:hover {
+        background: darken($secondary-color, 10);
+        color: set-text-color($secondary-color);
+    }
+}
+
+.back-btn {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    &:hover .back-text {
+        transform: translateY(-35px);
+        @include easeOut;
+    }
+    a {
+        color: $secondary-color;
+    }
+}
+
+.back-text {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    display: inline-block;
+    width: 60px;
+    padding: 2px;
+    background-color: $secondary-color;
+    color: $primary-color;
+    opacity: .7;
+    font-size: .8rem;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translateY(-100px);
+    @include easeOut;
+}
+
+.border {
+    width: 10%;
+    border: 1px solid $secondary-color;
+    margin: 50px auto 60px auto;
+}

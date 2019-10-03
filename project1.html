@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alessandro Dessì - Frontend Developer | Gestionale Scuola Calcio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+        <div class="back-btn">
+            <a href="portfolio.html">
+                <i class="fas fa-arrow-left fa-2x"></i>
+            </a>
+            <div class="back-text">
+                back
+            </div>
+        </div>
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait">
+                    <img src="img/avatar.jpg" alt="foto profilo alessandro dessì">
+                </div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item ">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="gallery-project">
+        <!-- <div class="bg-video">
+            <video class="bg-video__content" autoplay muted loop>
+                      <source src="img/projects/project3/Gestionale.mp4" type="video/mp4">
+                      <source src="img/projects/project3/Gestionale.mp4">
+                      Your Browser is not supported!
+                    </video>
+        </div> -->
+
+
+        <div class="inner-width">
+            <h1 class="lg-heading  animated fadeInDown slow">Gestionale Scuola Calcio</h1>
+            <div class="border"></div>
+            <div class="gallery">
+                <a href="img/projects/project1/1.jpg" class="image animated zoomIn slow delay-1s">
+                    <img src="img/projects/project1/1.jpg" alt="mockup gestionale per scuola calcio">
+                </a>
+                <a href="img/projects/project1/2.jpg" class="image animated zoomIn slow delay-1s">
+                    <img src="img/projects/project1/2.jpg" alt="mockup gestionale per scuola calcio">
+                </a>
+                <a href="img/projects/project1/3.jpg" class="image animated zoomIn slow delay-1s ">
+                    <img src="img/projects/project1/3.jpg" alt="mockup gestionale per scuola calcio">
+                </a>
+                <a href="img/projects/project1/4.jpg" class="image animated zoomIn slow delay-1s ">
+                    <img src="img/projects/project1/4.jpg" alt="mockup gestionale per scuola calcio">
+                </a>
+                <a href="img/projects/project1/5.jpg" class="image animated zoomIn slow delay-1s">
+                    <img src="img/projects/project1/5.jpg" alt="mockup gestionale per scuola calcio">
+                </a>
+                <a href="img/projects/project1/6.jpg" class="image animated zoomIn slow delay-1s">
+                    <img src="img/projects/project1/6.jpg" alt="mockup gestionale per scuola calcio">
+                </a>
+                <a href="img/projects/project1/7.jpg" class="image animated zoomIn slow delay-1s">
+                    <img src="img/projects/project1/7.jpg" alt="mockup gestionale per scuola calcio">
+                </a>
+                <a href="img/projects/project1/8.jpg" class="image animated zoomIn slow delay-1s">
+                    <img src="img/projects/project1/8.jpg" alt="mockup gestionale per scuola calcio">
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="animated fadeIn delay-2s">
+        <p>&copy; 2019 Alessandro Dessì. All rights reserved</p>
+        <a href="https://www.linkedin.com/in/alessandrodess/ ">
+            <i class="fab fa-linkedin fa-2x "></i>
+        </a>
+        <a href="file/CV-AlessandroDessì.pdf" download>
+            <i class="fas fa-cloud-download-alt fa-2x"></i>
+        </a>
+    </footer>
+    <script src="js/main.js"></script>
+    <script>
+        $('.gallery').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery: {
+                enabled: true
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+#home {
+    padding: 3rem;
+    height: 100%;
+    margin: auto;
+    transform: translateY(50%);
+    .icons {
+        margin-top: 1rem;
+        a {
+            padding: 0.4rem;
+            color: $secondary-color;
+            &:hover {
+                color: $secondary-color;
+                @include easeOut();
+            }
+        }
+    }
+    &#home {
+        overflow: hidden;
+        text-align: center;
+
+        
+    }
+}
+
+.newLine {
+    display: block;
+}

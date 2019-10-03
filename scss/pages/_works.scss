@@ -1,0 +1,115 @@
+    #about>h1 {
+        text-align: center;
+    }
+    
+    .gallery-container {
+        width: 100%;
+        margin: 0;
+        columns: 2;
+        column-gap: 0px;
+        @include respond(tab-port) {
+            columns: 1;
+        }
+        &__box {
+            break-inside: avoid;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            box-sizing: border-box;
+            overflow: hidden;
+            // box-shadow: 0 5px 10px rgba(0, 0, 0, .8);
+            &:before {
+                content: '';
+                position: absolute;
+                top: 10px;
+                bottom: 10px;
+                right: 10px;
+                left: 10px;
+                border-bottom: 1px solid $primary-color;
+                border-top: 1px solid $primary-color;
+                box-sizing: border-box;
+                @include easeOut;
+                transform: scaleX(0);
+                z-index: 1;
+            }
+            &:hover:before {
+                transform: scaleX(1);
+                opacity: 1;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                top: 10px;
+                bottom: 10px;
+                right: 10px;
+                left: 10px;
+                border-right: 1px solid $primary-color;
+                border-left: 1px solid $primary-color;
+                box-sizing: border-box;
+                @include easeOut;
+                transform: scaleY(0);
+                opacity: 0;
+                z-index: 1;
+            }
+            &:hover:after {
+                transform: scaleY(1);
+                opacity: 1;
+            }
+            &:hover .imgBox img {
+                opacity: .2;
+                transform: scale(1.2)
+            }
+            .imgBox {
+                position: relative;
+                img {
+                    width: 100%;
+                    @include easeOut;
+                    transform: scale(1.1)
+                }
+            }
+            &:hover .contentBox h3,
+            &:hover .contentBox p {
+                transform: translateY(0px);
+                opacity: 1;
+                visibility: visible;
+                transition-delay: .2s;
+            }
+            .contentBox {
+                position: absolute;
+                width: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 2;
+                padding: 20px;
+                box-sizing: border-box;
+                text-align: center;
+                h3 {
+                    margin: 0 0 10px;
+                    padding: 0;
+                    color: $primary-color;
+                    text-transform: uppercase;
+                    font-weight: 900;
+                    @include easeOut;
+                    transform: translateY(-50px);
+                    opacity: 0;
+                    visibility: hidden;
+                    @include respond(phone) {
+                        font-size: .7rem;
+                    }
+                }
+                p {
+                    margin: 0;
+                    padding: 0;
+                    color: $primary-color;
+                    @include easeOut;
+                    transform: translateY(50px);
+                    opacity: 0;
+                    visibility: hidden;
+                    @include respond(phone) {
+                        font-size: .7rem;
+                    }
+                }
+            }
+        }
+    }
